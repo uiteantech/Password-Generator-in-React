@@ -31,7 +31,7 @@ function App() {
 
    const passwordreff=useRef(null)
 
-   const passwordrefference=useCallback(() =>{
+   const  passwordrefference=useCallback(() =>{
     window.navigator.clipboard.write(password)
     passwordreff.current?.select()
     passwordreff.current?.setSelectionRange(0,5)
